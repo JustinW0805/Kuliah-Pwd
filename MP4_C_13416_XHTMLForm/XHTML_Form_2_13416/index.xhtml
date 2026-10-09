@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Formulir Pendaftaran Lomba</title>
+</head>
+<body>
+
+    <h1>Formulir Pendaftaran Lomba</h1>
+
+    <form action="proses.php" method="post">
+
+        <h3>Data Tim</h3>
+        <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;">
+                    <label for="nama_tim"><strong>Nama Tim</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="nama_tim" name="nama_tim" />
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:32%;">
+                    <label for="nama_ketua"><strong>Nama Ketua</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="nama_ketua" name="nama_ketua" />
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:32%;">
+                    <label for="jumlah_anggota"><strong>Jumlah Anggota</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="jumlah_anggota" name="jumlah_anggota" />
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:32%;">
+                    <label for="prodi"><strong>Program Studi</strong></label>
+                </td>
+                <td>
+                    <select id="prodi" name="prodi">
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Industri</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        
+
+        <h3>Pilihan Lomba</h3>
+        <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;">
+                    <strong>Kategori Lomba</strong>
+                </td>
+                <td>
+                    <input type="radio" id="individu" name="kategori" value="Individu" />
+                    <label for="individu">Individu</label>
+                    <input type="radio" id="kelompok" name="kategori" value="Kelompok" />
+                    <label for="kelompok">Kelompok</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <strong>Bidang Lomba</strong>
+                </td>
+                <td>
+                    <input type="checkbox" id="programming" name="bidang" value="Programming" />
+                    <label for="programming">Programming</label>
+                    
+                    <input type="checkbox" id="uiux" name="bidang" value="UI/UX Design" />
+                    <label for="uiux">UI/UX Design</label>
+                    
+                    <input type="checkbox" id="karyatulis" name="bidang" value="Karya Tulis" />
+                    <label for="karyatulis">Karya Tulis</label>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Informasi Karya</h3>
+        <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;">
+                    <label for="deskripsi"><strong>Deskripsi Karya</strong></label>
+                </td>
+                <td>
+                    <textarea id="deskripsi" name="deskripsi" rows="6" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <label for="file_karya"><strong>File Karya</strong></label>
+                </td>
+                <td>
+                    <input type="file" id="file_karya" name="file_karya" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" name="daftar" value="Daftar" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+</html>

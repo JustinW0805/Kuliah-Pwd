@@ -1,0 +1,37 @@
+
+body {
+    text-align: center;
+}
+
+#wrapper {
+    width: 720px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+td, th {
+    border-style: groove;
+}
+
+table {
+    width: 100%;
+    border-style: groove;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+td {
+    padding: 10px;
+}
+
+tr.hlRow td, th {
+    background-color: #eee;
+}
+
+tr.regrow td {
+    background-color: #fff;
+}
+
+input, select, textarea {
+    font-family: inherit;
+}
